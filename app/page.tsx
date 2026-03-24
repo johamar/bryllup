@@ -1,16 +1,40 @@
-import Image from "next/image";
+import { Gallery } from "@/components/wedding/Gallery";
+import { Hero } from "@/components/wedding/Hero";
+import { PracticalInfo } from "@/components/wedding/PracticalInfo";
+import { Rsvp } from "@/components/wedding/Rsvp";
+import { Schedule } from "@/components/wedding/Schedule";
+import { Story } from "@/components/wedding/Story";
+import {
+  galleryImages,
+  practicalInfoItems,
+  scheduleItems,
+  storyItems,
+  weddingDetails,
+} from "@/data/wedding";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <h1 className="text-2xl font-bold text-center mt-10">
-      Velkommen til bryllup!
-    </h1><h2 className="text-xl font-semibold text-center mt-5">
-        Vi gifter oss 18.-20. september 2026.
-      </h2><p className="text-lg text-center mt-5">
-        Info om brylluper kommer snart! Vi gleder oss til å feire sammen med dere.
-      </p>
-    </div>
+    <main className="overflow-x-hidden bg-neutral-950 text-white selection:bg-amber-100 selection:text-neutral-900">
+      <Hero
+        date={weddingDetails.date}
+        city={weddingDetails.city}
+        title={weddingDetails.heroTitle}
+        text={weddingDetails.heroText}
+      />
 
+      <Story items={storyItems} />
+      <Schedule items={scheduleItems} />
+      <Gallery images={galleryImages} />
+      <PracticalInfo
+        items={practicalInfoItems}
+        venueName={weddingDetails.venueName}
+        venueDescription={weddingDetails.venueDescription}
+      />
+      <Rsvp deadline={weddingDetails.rsvpDeadline} />
+
+      <footer className="border-t border-white/10 px-6 py-10 text-center text-sm text-white/45 md:px-10">
+        Laget med kjærlighet • {weddingDetails.couple}
+      </footer>
+    </main>
   );
 }
