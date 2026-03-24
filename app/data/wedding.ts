@@ -82,7 +82,7 @@ export const storyItems: StoryItem[] = [
       },
       {
         type: "image",
-        src: "/images/story/story-29.jpg",
+        src: "/images/story/story-29.jpeg",
         alt: "Wien",
         objectPosition: "50% 0%",
       },
@@ -101,7 +101,7 @@ export const storyItems: StoryItem[] = [
       },
       {
         type: "image",
-        src: "/images/story/story-20.jpg",
+        src: "/images/story/story-20.jpeg",
         alt: "Gran Canaria",
         objectPosition: "50% 40%",
       },
@@ -114,7 +114,7 @@ export const storyItems: StoryItem[] = [
     media: [
        {
         type: "image",
-        src: "/images/story/story-22.jpg",
+        src: "/images/story/story-22.jpeg",
         alt: "Frieriet",
       },
       {
@@ -132,13 +132,13 @@ export const storyItems: StoryItem[] = [
     media: [
       {
         type: "image",
-        src: "/images/story/story-30.jpg",
+        src: "/images/story/story-30.jpeg",
         alt: "Nyttårsaften",
         objectPosition: "50% 35%",
       },
       {
         type: "image",
-        src: "/images/story/story-31.jpg",
+        src: "/images/story/story-31.jpeg",
         alt: "Nyttårsaften",
         objectPosition: "50% 30%",
       },
