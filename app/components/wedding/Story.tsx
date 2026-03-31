@@ -29,6 +29,10 @@ type StoryProps = {
   items: StoryItem[];
 };
 
+function shouldEagerLoadStoryImage(src: string) {
+  return src === "/images/story/story-11.jpeg" || src === "/images/story/story-29.jpeg";
+}
+
 function StoryMediaBlock({ media }: { media: StoryMedia[] }) {
   if (media.length === 1) {
     const item = media[0];
@@ -36,7 +40,15 @@ function StoryMediaBlock({ media }: { media: StoryMedia[] }) {
     if (item.type === "image") {
       return (
         <div className="relative min-h-[320px] overflow-hidden rounded-[2rem]">
-          <Image src={item.src} alt={item.alt} fill className="object-cover" />
+          <Image
+            src={item.src}
+            alt={item.alt}
+            fill
+            loading={shouldEagerLoadStoryImage(item.src) ? "eager" : "lazy"}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover"
+            style={{ objectPosition: item.objectPosition ?? "50% 50%" }}
+          />
         </div>
       );
     }
@@ -62,11 +74,13 @@ function StoryMediaBlock({ media }: { media: StoryMedia[] }) {
         >
           {item.type === "image" ? (
             <Image
-            src={item.src} 
-            alt={item.alt} 
-            fill 
-            className="object-cover"
-            style={{ objectPosition: item.objectPosition ?? "50% 50%" }}
+              src={item.src}
+              alt={item.alt}
+              fill
+              loading={shouldEagerLoadStoryImage(item.src) ? "eager" : "lazy"}
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="object-cover"
+              style={{ objectPosition: item.objectPosition ?? "50% 50%" }}
             />
           ) : (
             <video

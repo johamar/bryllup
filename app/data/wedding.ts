@@ -1,3 +1,5 @@
+import { object } from "motion/react-client";
+
 export const weddingDetails = {
   couple: "Johan & Signe",
   date: "19. september 2026",
@@ -190,143 +192,151 @@ export const practicalInfoItems = [
 
 export const galleryImages = [
   {
-    src: "/images/gallery/FullSizeRender%20(1).jpeg",
+    src: "/images/gallery/gallery-1.jpeg",
     alt: "Galleri bilde 1",
+    objectPosition: "50% 20%",
   },
   {
-    src: "/images/gallery/FullSizeRender%20(3).jpeg",
-    alt: "Galleri bilde 2",
-  },
-  {
-    src: "/images/gallery/IMG_0452.jpg",
+    src: "/images/gallery/gallery-3.jpeg",
     alt: "Galleri bilde 3",
+    objectPosition: "50% 30%",
+
   },
   {
-    src: "/images/gallery/IMG_0678.JPG",
+    src: "/images/gallery/gallery-4.jpeg",
     alt: "Galleri bilde 4",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/images/gallery/IMG_0821.jpeg",
+    src: "/images/gallery/gallery-5.jpeg",
     alt: "Galleri bilde 5",
+    objectPosition: "50% 0%",
   },
   {
-    src: "/images/gallery/IMG_1111.jpeg",
+    src: "/images/gallery/gallery-6.jpeg",
     alt: "Galleri bilde 6",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/images/gallery/IMG_1184.jpeg",
+    src: "/images/gallery/gallery-7.jpeg",
     alt: "Galleri bilde 7",
+    objectPosition: "50% 20%",
   },
   {
-    src: "/images/gallery/IMG_1601.JPG",
-    alt: "Galleri bilde 8",
-  },
-  {
-    src: "/images/gallery/IMG_1752.jpeg",
+    src: "/images/gallery/gallery-9.jpeg",
     alt: "Galleri bilde 9",
+    objectPosition: "50% 30%",
   },
   {
-    src: "/images/gallery/IMG_2112.JPG",
+    src: "/images/gallery/gallery-10.jpeg",
     alt: "Galleri bilde 10",
+    objectPosition: "50% 40%",
   },
   {
-    src: "/images/gallery/IMG_2116.JPG",
+    src: "/images/gallery/gallery-11.jpeg",
     alt: "Galleri bilde 11",
+    objectPosition: "50% 40%",
   },
   {
-    src: "/images/gallery/IMG_2117.JPG",
+    src: "/images/gallery/gallery-12.jpeg",
     alt: "Galleri bilde 12",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/images/gallery/IMG_2120.JPG",
+    src: "/images/gallery/gallery-13.jpeg",
     alt: "Galleri bilde 13",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/images/gallery/IMG_2130.JPG",
+    src: "/images/gallery/gallery-14.jpeg",
     alt: "Galleri bilde 14",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/images/gallery/IMG_2131.JPG",
+    src: "/images/gallery/gallery-15.jpeg",
     alt: "Galleri bilde 15",
+    objectPosition: "50% 40%",
   },
   {
-    src: "/images/gallery/IMG_2583.JPG",
+    src: "/images/gallery/gallery-16.jpeg",
     alt: "Galleri bilde 16",
+    objectPosition: "50% 40%",
   },
   {
-    src: "/images/gallery/IMG_2620.JPG",
+    src: "/images/gallery/gallery-17.jpeg",
     alt: "Galleri bilde 17",
+    objectPosition: "50% 40%",
   },
   {
-    src: "/images/gallery/IMG_2622.JPG",
+    src: "/images/gallery/gallery-18.jpeg",
     alt: "Galleri bilde 18",
+    objectPosition: "50% 20%",
   },
   {
-    src: "/images/gallery/IMG_2630.JPG",
+    src: "/images/gallery/gallery-19.jpeg",
     alt: "Galleri bilde 19",
+    objectPosition: "50% 30%",
   },
   {
-    src: "/images/gallery/IMG_2631.JPG",
-    alt: "Galleri bilde 20",
-  },
-  {
-    src: "/images/gallery/IMG_2653.JPG",
+    src: "/images/gallery/gallery-21.jpeg",
     alt: "Galleri bilde 21",
+    objectPosition: "50% 20%",
   },
   {
-    src: "/images/gallery/IMG_2664.JPG",
-    alt: "Galleri bilde 22",
-  },
-  {
-    src: "/images/gallery/IMG_2955.jpeg",
+    src: "/images/gallery/gallery-23.jpeg",
     alt: "Galleri bilde 23",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/images/gallery/IMG_2971.JPG",
+    src: "/images/gallery/gallery-24.jpeg",
     alt: "Galleri bilde 24",
+    objectPosition: "50% 35%",
   },
   {
-    src: "/images/gallery/IMG_3070.jpeg",
-    alt: "Galleri bilde 25",
-  },
-  {
-    src: "/images/gallery/IMG_3117.JPG",
+    src: "/images/gallery/gallery-26.jpeg",
     alt: "Galleri bilde 26",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/images/gallery/IMG_3144.JPG",
+    src: "/images/gallery/gallery-27.jpeg",
     alt: "Galleri bilde 27",
+    objectPosition: "50% 50%",
+
   },
   {
-    src: "/images/gallery/IMG_3228.JPG",
+    src: "/images/gallery/gallery-28.jpeg",
     alt: "Galleri bilde 28",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/images/gallery/IMG_3263.jpeg",
+    src: "/images/gallery/gallery-29.jpeg",
     alt: "Galleri bilde 29",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/images/gallery/IMG_3392.JPG",
+    src: "/images/gallery/gallery-30.jpeg",
     alt: "Galleri bilde 30",
+    objectPosition: "50% 50%",
+
   },
   {
-    src: "/images/gallery/IMG_3424.jpeg",
+    src: "/images/gallery/gallery-31.jpeg",
     alt: "Galleri bilde 31",
+    objectPosition: "50% 30%",
   },
   {
-    src: "/images/gallery/IMG_3524.jpeg",
+    src: "/images/gallery/gallery-32.jpeg",
     alt: "Galleri bilde 32",
+    objectPosition: "50% 30%",
   },
   {
-    src: "/images/gallery/IMG_3525.jpeg",
+    src: "/images/gallery/gallery-33.jpeg",
     alt: "Galleri bilde 33",
+    objectPosition: "50% 30%",
   },
   {
-    src: "/images/gallery/IMG_3653.jpeg",
+    src: "/images/gallery/gallery-34.jpeg",
     alt: "Galleri bilde 34",
-  },
-  {
-    src: "/images/gallery/IMG_3669.jpeg",
-    alt: "Galleri bilde 35",
+    objectPosition: "50% 20%",
   },
 ];

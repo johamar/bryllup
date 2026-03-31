@@ -31,8 +31,9 @@ export function Hero({ date, city, title, text }: HeroProps) {
           alt="Bryllupsbakgrunn"
           fill
           priority
+          sizes="100vw"
           className="object-cover object-center"
-          objectPosition="60% 45%"
+          style={{ objectPosition: "60% 45%" }}
         />
       </motion.div>
 

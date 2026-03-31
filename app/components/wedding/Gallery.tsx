@@ -8,14 +8,26 @@ import { SectionHeading } from "./SectionHeading";
 type GalleryImage = {
   src: string;
   alt: string;
+  objectPosition?: string;
 };
 
 type GalleryProps = {
   images: GalleryImage[];
 };
 
+const LCP_GALLERY_SRC = "/images/gallery/FullSizeRender%20(3).jpeg";
+
 export function Gallery({ images }: GalleryProps) {
   const scrollRef = useRef<HTMLDivElement | null>(null);
+
+  const shouldEagerLoadImage = (src: string, index: number) => {
+    if (images.length === 0) {
+      return false;
+    }
+
+    const isMiddleLoop = index >= images.length && index < images.length * 2;
+    return src === LCP_GALLERY_SRC && isMiddleLoop;
+  };
 
   const loopedImages = useMemo(() => {
     if (images.length === 0) {
@@ -69,7 +81,7 @@ export function Gallery({ images }: GalleryProps) {
         <SectionHeading
           eyebrow="Galleri"
           title="Små glimt av oss"
-          text="Denne delen kan gjerne være mer visuell enn tekstlig. Du kan bytte ut bildene med egne bilder og eventuelt en liten video mellom rutene."
+          text=""
         />
 
         <div className="relative">
@@ -95,8 +107,10 @@ export function Gallery({ images }: GalleryProps) {
                 src={image.src}
                 alt={image.alt}
                 fill
+                loading={shouldEagerLoadImage(image.src, index) ? "eager" : "lazy"}
                 sizes="(max-width: 640px) 82vw, (max-width: 1024px) 62vw, 36vw"
                 className="object-cover transition duration-700 group-hover:scale-105"
+                style={{ objectPosition: image.objectPosition || "center" }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/5 to-transparent" />
             </motion.div>

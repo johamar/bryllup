@@ -54,6 +54,7 @@ export function PracticalInfo({ items, venueName, venueDescription }: PracticalI
               src="/images/venue/venue-main2.jpg"
               alt="Bryllupslokasjon"
               fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
