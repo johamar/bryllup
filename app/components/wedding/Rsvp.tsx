@@ -25,7 +25,7 @@ export function Rsvp({ deadline }: RsvpProps) {
         </p> */}
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="#"
+            href="#tally-open=EkDDzX&tally-layout=modal"
             className="rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:scale-[1.02]"
           >
             Svar på invitasjonen

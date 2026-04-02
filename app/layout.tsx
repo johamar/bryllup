@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} relative h-full overflow-x-hidden antialiased`}
     >
-      <body className="relative min-h-full flex flex-col overflow-x-hidden">{children}</body>
+      <body className="relative min-h-full flex flex-col overflow-x-hidden">{children}
+        <Script src="https://tally.so/widgets/embed.js" strategy="afterInteractive" />
+      </body>
     </html>
   );
 }
