@@ -54,7 +54,7 @@ export function Hero({ date, city, title, text }: HeroProps) {
             max-w-3xl
             rounded-3xl
             bg-black/28 p-4 backdrop-blur-[2px]
-            md:rounded-none md:bg-transparent md:p-0 md:backdrop-blur-0
+            md:rounded-1xl md:bg-transparent md:p-0 md:backdrop-blur-0
           "
         >
           <motion.p
@@ -101,6 +101,12 @@ export function Hero({ date, city, title, text }: HeroProps) {
               className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
             >
               Praktisk informasjon
+            </a>
+            <a
+              href="#tally-open=EkDDzX&tally-layout=modal"
+              className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
+            >
+              Svar på invitasjonen
             </a>
           </motion.div>
         </motion.div>

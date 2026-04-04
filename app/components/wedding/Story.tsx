@@ -112,7 +112,6 @@ export function Story({ items }: StoryProps) {
       <SectionHeading
         eyebrow="Vår historie"
         title="En liten reise frem til denne dagen"
-        text="Denne seksjonen fungerer fint med korte tekster, datoer og bilder."
       />
 
       <div ref={storyRef} className="relative mx-auto flex max-w-5xl flex-col gap-12">

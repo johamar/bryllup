@@ -9,7 +9,7 @@ export const weddingDetails = {
     "Vi gleder oss til å feire kjærligheten sammen med dere. Her finner dere alt dere trenger å vite om dagen vår - fra program og praktisk info til små glimt av historien vår.",
   venueName: "Nordly Grendehus",
   venueDescription:
-    "Legg inn en kort beskrivelse av venue, utsikt eller hvorfor dere valgte akkurat dette stedet.",
+    "Feiringen holdes på Nordly Grendehus i Bodø, et hyggelig og romslig lokale med god plass til både middag, taler og dans utover kvelden. Lokalet egner seg godt til bryllup og har fasiliteter som musikkanlegg, scene og storkjøkken, som gjør det til en fin ramme for den store dagen.  ",
   rsvpDeadline: "1. august 2026",
 };
 
@@ -37,7 +37,7 @@ type StoryItem = {
 export const storyItems: StoryItem[] = [
   {
     year: "2020",
-    text: "Vi matcha på Tinder og hadde vår første date på Nattmålstinden",
+    text: "Året vi møttes. Første date var på Nattmålstinden med kvikklunsj i lommen.",
     media: [
       {
         type: "image",
@@ -55,8 +55,8 @@ export const storyItems: StoryItem[] = [
   },
   {
     year: "2021",
-    title: "Første året sammen",
-    text: "Sånn gikk 2021.",
+    title: "Tromsdalstinden og turer i sola",
+    text: "Vi flyttet inn sammen og vennegjengene våres møttes. ",
     media: [
       {
         type: "image",
@@ -74,13 +74,13 @@ export const storyItems: StoryItem[] = [
   {
     year: "2022",
     title: "Nyttår og Wien",
-    text: "Vi feirer nyttårsaften 2022 sammen og drar på tur til Wien.",
+    text: "Vi hadde vår første ferie og vår første konsert",
     media: [
       {
         type: "image",
-        src: "/images/story/story-22.jpeg",
+        src: "/images/story/story-14.jpeg",
         alt: "Nyttårsaften",
-        objectPosition: "50% 0%",
+        objectPosition: "90% 0%",
       },
       {
         type: "image",
@@ -93,7 +93,7 @@ export const storyItems: StoryItem[] = [
   {
     year: "2023",
     title: "Coldplay og Gran Canaria",
-    text: "Vi opplever Coldplay-konsert i gøteborg og drar på tur til Gran Canaria.",
+    text: "Vi flytter til Trondheim. Signe ble ferdigutdannet sykepleier og Johan begynte på dataingeniørstudiet.",
     media: [
       {
         type: "image",
@@ -112,11 +112,11 @@ export const storyItems: StoryItem[] = [
   {
     year: "2024",
     title: "Frieriet",
-    text: "Johan frir på hyttetur i Oppdal, og Signe sier ja!",
+    text: "01.01.24 Johan gikk ned på kne. Vi fikk en liten gutt i magen.",
     media: [
        {
         type: "image",
-        src: "/images/story/story-22.jpeg",
+        src: "/images/story/story-99.jpeg",
         alt: "Frieriet",
       },
       {

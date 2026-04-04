@@ -19,7 +19,7 @@ export function Schedule({ items }: ScheduleProps) {
       <SectionHeading
         eyebrow="Dagen vår"
         title="Program for bryllupsdagen"
-        text="En ren og tydelig oversikt gjør det lett for gjestene å finne frem i dagen."
+        text=""
       />
 
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
